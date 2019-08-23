@@ -50,7 +50,6 @@ Por supuesto, almacenar manualmente referencias en este formato bib no es muy am
     - El coordinador/primer autor exporta esta colección a la carpeta del proyecto colaborativo (eventualmente un dropbox) donde está el tex/md. Para ello, botón derecho sobre la carpeta, "export library", seleccionar *format Better Bibtex*, y nuevamente, muy importante: check box "keep updated", así cualquier cambio que se haga en la colección desde Zotero se reflejará en el .bib. Guardar en la carpeta donde se encuentra el archivo tex
     - Luego, revisar en la pestaña de BBT de preferencias, en automatic export, que la carpeta efectivamente está en el listado. Además, marcar la opción "on change".
 
-
 ## Referenciando en TEX
 
   - En el preámbulo (hay diferentes opciones de formato, pero para estilo clásico APA):
@@ -64,15 +63,15 @@ Por supuesto, almacenar manualmente referencias en este formato bib no es muy am
   - obligatorio: tiene que definirse un estilo para que funcione la compilación de la bibliografía (al menos esa fue mi experiencia)
   - Y luego, donde se quiera la bibliografía, (usualmente, alfinal, antes de end(document))
 
-```
-\bibliography{micoleccion}
-```
+  ```
+  \bibliography{micoleccion}
+  ```
   - aquí va el nombre de la colección, cuidado con no darle nombre con espacios, y tampoco terminarla con .bib
   - También se puede indicar con path relativos, ej:
 
-```
- \bibliography{../../bib/micoleccion}
-```
+  ```
+   \bibliography{../../bib/micoleccion}
+  ```
 
   - donde "../" es para subir un nivel en la estructura de directorios
   - Con esto, ya se puede comenzar a citar con las distintas opciones; ver <https://gking.harvard.edu/files/natnotes2.pdf>
@@ -90,98 +89,103 @@ Por supuesto, almacenar manualmente referencias en este formato bib no es muy am
 
 - se establece la ruta al archivo bib en el YAML header, al comienzo del documento, por ejemplo:
 
-```
----
-bibliography:
-- 'MyLibrary.bib'
----
-```
+  ```
+  ---
+  bibliography:
+  - 'MyLibrary.bib'
+  ---
+  ```
 
-- para citar, se debe escribir el "citation key" de la referencia correspondiente.
-- la lista de referencias aparece automáticamente al final del documento
-- el estilo de bibliografía se debe indicar adicionalmente, basado en un archivo .csl correspondiente.Un listado de estilos disponibles se encuentra en: <https://www.zotero.org/styles>
-- Luego el csl se agrega al YAML. Ej:
+  - para citar, se debe escribir el "citation key" de la referencia correspondiente.
+  - la lista de referencias aparece automáticamente al final del documento
+  - el estilo de bibliografía se debe indicar adicionalmente, basado en un archivo .csl correspondiente.Un listado de estilos disponibles se encuentra en: <https://www.zotero.org/styles>
+  - Luego el csl se agrega al YAML. Ej:
 
-```
----
-bibliography:
-- MyLibrary.bib
-- csl: apa.csl
----
+  ```
+  ---
+  bibliography:
+  - MyLibrary.bib
+  - csl: apa.csl
+  ---
 
-```
+  ```
 
-- Alternativas para automatizar la inserción de referencias:  ya que insertar referencias manualmente es muy engorroso, hay algunas alternativas de automatización que generan un flujo de trabajo similar al de insertar citas y bibliografía en Word/Open Office vía Zotero. El mejor entorno que conozco para hacer esto es Atom, porque sirve tanto para Latex como para Markdown. También hay una forma en Rstudio vía la librería/add-in "citr". Comenzamos con esta:
+  - Alternativas para automatizar la inserción de referencias:  ya que insertar referencias manualmente es muy engorroso, hay algunas alternativas de automatización que generan un flujo de trabajo similar al de insertar citas y bibliografía en Word/Open Office vía Zotero. El mejor entorno que conozco para hacer esto es Atom, porque sirve tanto para Latex como para Markdown. También hay una forma en Rstudio vía la librería/add-in "citr". Comenzamos con esta:
 
-- Usando Rstudio - citr <https://github.com/crsh/citr>:
-  - Al instalar Rmarkdown, se instala automaticamente pandoc al interior de la carpeta de Rstudio (/usr/lib/rstudio/bin/pandoc), donde están los ejecutables pandoc y pandoc-citeproc. Por lo tanto, en archivos Rmd basta dar el nombre del archivo/path al bib  en el YAML header para que encuentre la bibliografía y la compile correctamente.
-  - Instalar citr
-  - reiniciar
-  - Luego en el add-in (desplegable, o tools/add-ins) aparece "insert citations", si está bien especificado el bib en el YAML debería aparecer aquí la lista de referencias.
-
-## Markdown / Xaringan
-
-[Xaringan]() es una librería de R que permite generar presentaciones en html basadas en [remark](https://remarkjs.com), que utiliza una estructura simple de markdown. Básicamente, lo que hace Remark es compilar un markdown + un poco de css a un html, y Xaringan se encarga de la parte css así que el usuario trabaja (casi) solo en markdown.
-
-El problema: para generar el html no pasa por pandoc, así que no sigue la misma lógica de las citas de markdown. Pero ... todo tiene una vuelta de tuerca, y en este caso se puede utilizando el paquete de R [RefManageR](https://github.com/ropensci/RefManageR).
-
-1. Indicar paquete y librería: en un chunk de setup luego del YAML header. La librería se indica con la función ReadBib de RefManageR (en este caso, en el mismo directorio, si no dar el path)
+  - Usando Rstudio - citr <https://github.com/crsh/citr>:
+    - Al instalar Rmarkdown, se instala automaticamente pandoc al interior de la carpeta de Rstudio (/usr/lib/rstudio/bin/pandoc), donde están los ejecutables pandoc y pandoc-citeproc. Por lo tanto, en archivos Rmd basta dar el nombre del archivo/path al bib  en el YAML header para que encuentre la bibliografía y la compile correctamente.
+    - Instalar citr
+    - reiniciar
+    - Luego en el add-in (desplegable, o tools/add-ins) aparece "insert citations", si está bien especificado el bib en el YAML debería aparecer aquí la lista de referencias.
 
 
-````markdown
-```{r setup, include=FALSE}
- options(htmltools.dir.version = TRUE)
- pacman::p_load(RefManageR)
- bib <- ReadBib("merit_pref_int.bib", check = FALSE)
-```
-````
+    ## Markdown / Xaringan
 
-2. Para citar: los comandos básicos del RefManageR son Cite(), Citep() y Citet() (como en natbib), y en el paréntesis va el nombre del objeto generado antes y que contiene las referencias (bib) y la clave de la referencia como está en el Bibtex. Ejemplo: Cite(bib, "castillo_2018"). Ahora, como se trata de compilar a html sin pasar por pandoc, hay que dar la instrucción para que R/RefManageR hagan el trabajo, así que la cita se escribe en un mini-chunk de código:  ```` `r Cite (bib, "castillo_2018")` ````
+    [Xaringan]() es una librería de R que permite generar presentaciones en html basadas en [remark](https://remarkjs.com), que utiliza una estructura simple de markdown. Básicamente, lo que hace Remark es compilar un markdown + un poco de css a un html, y Xaringan se encarga de la parte css así que el usuario trabaja (casi) solo en markdown.
 
-3. Algunas complicaciones del RefManagerR
+    El problema: para generar el html no pasa por pandoc, así que no sigue la misma lógica de las citas de markdown. Pero ... todo tiene una vuelta de tuerca, y en este caso se puede utilizando el paquete de R [RefManageR](https://github.com/ropensci/RefManageR).
 
-  - muy estricto con la librería .bib, si hay algo que falta en algún campo va a reportar el error. Por lo tanto, a menos que el .bib de la colección completa esté perfecto, es mejor hacer una subcolección de Zotero con las referencias y esta exportarla como Bibtext a la carpeta correspondiente donde se está trabajando
-  - se puede usar el Zotero Picker en Atom para facilitar el trabajo, pero hay que sacarle manualmente la @ inicial que es automática para referencias en markdown que pasan por pandoc
-
-3. Para generar las referencias: en la lámina que corresponde, incluir:
-
-````markdown
-```{r, results='asis', echo=FALSE}
-PrintBibliography(bib)
-```
-````
-
-## Usando Atom para flujo de trabajo académico en texto plano con citas
-
-Aquí hay tres cosas que ver: insertar, preview y convert
-
-  - Insertar:
-      - para insertar citaciones lo más fácil es instalar el zotero-picker, que automáticamente detecta la librería bib que se encuentra en la misma carpeta de Zotero (vía Better Bibtex). Funciona igual que el plugin clásico para procesadores de texto, shortcut alt-z
-      - otra alternativa que se puede instalar en paralelo es el autocomplete-bibtex, que busca la cita una vez escrito @ y las tres primeras letras, asumiendo que la bib está en el mismo directorio (o probar también si funciona dando el path con YAML)
-
-  - Preview
-      - markdown se puede visualizar simultáneamente en atom con el paquete markdown-preview-plus (MPP) (ctrl+shift+m). Para que aparezcan las citas y la bibliografía se deben hacer un par de ajustes (* si se instala Rmarkdown, pandoc ya está instalado, pero en el directorio de R y Atom no lo reconoce, por eso recomiendo instalarlo nuevamente):
-        - instalar pandoc, en ubuntu
-          - sudo apt-get update
-          - sudo apt-get install pandoc
-          - chequear instalado: dpkg -L pandoc
-        - instalar pandoc citeproc
-          - sudo apt-get update
-          - sudo apt-get install pandoc-citeproc
-        - en las opciones del paquete
-          - enable pandoc parser
-          - pandoc options: citations
-        - en el documento .md crear al principio un YAML header con el path hacia el bib:
-
-```
----
-bibliography:
-- '/media/ntfs/Dropbox/zoterojcydocs/MyLibrary.bib'
----
-```
-
-  - con esto, luego el MPP muestra las citas (en el preview)
+    1. Indicar paquete y librería: en un chunk de setup luego del YAML header. La librería se indica con la función ReadBib de RefManageR (en este caso, en el mismo directorio, si no dar el path)
 
 
-  - Convertir: el paquete pandoc-convert (hasta ahora) no convierte las citas, solo el texto. Lo que funciona es vía linea de comando, abriendo terminal desde atom y:
-    - pandoc -s -S --bibliography MyLibrary.bib --filter pandoc-citeproc --csl apa-cv.csl inequality_perception_issp.md -o inequality_perception_issp.html
+    ````
+      ```{r setup, include=FALSE}`r ''`
+       options(htmltools.dir.version = TRUE)
+       pacman::p_load(RefManageR)
+       bib <- ReadBib("merit_pref_int.bib", check = FALSE)
+      ```
+    ````
+
+
+    2. Para citar: los comandos básicos del RefManageR son Cite(), Citep() y Citet() (como en natbib), y en el paréntesis va el nombre del objeto generado antes y que contiene las referencias (bib) y la clave de la referencia como está en el Bibtex. Ejemplo: Cite(bib, "castillo_2018"). Ahora, como se trata de compilar a html sin pasar por pandoc, hay que dar la instrucción para que R/RefManageR hagan el trabajo, así que la cita se escribe en un mini-chunk de código:  r Cite (bib, "castillo_2018")
+
+    3. Algunas complicaciones del RefManagerR
+
+      - muy estricto con la librería .bib, si hay algo que falta en algún campo va a reportar el error. Por lo tanto, a menos que el .bib de la colección completa esté perfecto, es mejor hacer una subcolección de Zotero con las referencias y esta exportarla como Bibtext a la carpeta correspondiente donde se está trabajando
+      - se puede usar el Zotero Picker en Atom para facilitar el trabajo, pero hay que sacarle manualmente la @ inicial que es automática para referencias en markdown que pasan por pandoc
+
+    4. Para generar las referencias: en la lámina que corresponde, incluir:
+
+    ````
+    ```{r, results='asis', echo=FALSE}`r ''`
+    PrintBibliography(bib)
+    ```
+    ````
+
+    ## Usando Atom para flujo de trabajo académico en texto plano con citas
+
+    Aquí hay tres cosas que ver: insertar, preview y convert
+
+      - Insertar:
+          - para insertar citaciones lo más fácil es instalar el zotero-picker, que automáticamente detecta la librería bib que se encuentra en la misma carpeta de Zotero (vía Better Bibtex). Funciona igual que el plugin clásico para procesadores de texto, shortcut alt-z
+          - otra alternativa que se puede instalar en paralelo es el autocomplete-bibtex, que busca la cita una vez escrito @ y las tres primeras letras, asumiendo que la bib está en el mismo directorio (o probar también si funciona dando el path con YAML)
+
+      - Preview
+          - markdown se puede visualizar simultáneamente en atom con el paquete markdown-preview-plus (MPP) (ctrl+shift+m). Para que aparezcan las citas y la bibliografía se deben hacer un par de ajustes (* si se instala Rmarkdown, pandoc ya está instalado, pero en el directorio de R y Atom no lo reconoce, por eso recomiendo instalarlo nuevamente):
+            - instalar pandoc, en ubuntu
+              - sudo apt-get update
+              - sudo apt-get install pandoc
+              - chequear instalado: dpkg -L pandoc
+            - instalar pandoc citeproc
+              - sudo apt-get update
+              - sudo apt-get install pandoc-citeproc
+            - en las opciones del paquete
+              - enable pandoc parser
+              - pandoc options: citations
+            - en el documento .md crear al principio un YAML header con el path hacia el bib:
+
+    ```
+    ---
+    bibliography:
+    - '/media/ntfs/Dropbox/zoterojcydocs/MyLibrary.bib'
+    ---
+    ```
+
+      - con esto, luego el MPP muestra las citas (en el preview)
+
+
+      - Convertir: el paquete pandoc-convert (hasta ahora) no convierte las citas, solo el texto. Lo que funciona es vía linea de comando, abriendo terminal desde atom y:
+
+  ```
+  pandoc -s -S --bibliography MyLibrary.bib --filter pandoc-citeproc --csl apa-cv.csl inequality_perception_issp.md -o inequality_perception_issp.html
+  ```

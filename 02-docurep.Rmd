@@ -42,11 +42,13 @@ Los títulos se generan mediante el caracter # , de la siguiente manera:
 
 Lo que al convertir genera lo siguiente:
 
-# Titulo 1
-## Título 2
-### Título 3
+<b><font size=6>Titulo 1</font></b>
 
----
+<b><font size=5>Titulo 2</font></b>
+
+<b><font size=4>Titulo 3</font></b>
+
+
 
 **Negritas / cursivas**
 
