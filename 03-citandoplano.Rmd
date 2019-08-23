@@ -89,26 +89,26 @@ Por supuesto, almacenar manualmente referencias en este formato bib no es muy am
 
 - se establece la ruta al archivo bib en el YAML header, al comienzo del documento, por ejemplo:
 
-  ```
+  ````
   ---
   bibliography:
   - 'MyLibrary.bib'
   ---
-  ```
+  ````
 
   - para citar, se debe escribir el "citation key" de la referencia correspondiente.
   - la lista de referencias aparece automáticamente al final del documento
   - el estilo de bibliografía se debe indicar adicionalmente, basado en un archivo .csl correspondiente.Un listado de estilos disponibles se encuentra en: <https://www.zotero.org/styles>
   - Luego el csl se agrega al YAML. Ej:
 
-  ```
+  ````
   ---
   bibliography:
   - MyLibrary.bib
   - csl: apa.csl
   ---
 
-  ```
+  ````
 
   - Alternativas para automatizar la inserción de referencias:  ya que insertar referencias manualmente es muy engorroso, hay algunas alternativas de automatización que generan un flujo de trabajo similar al de insertar citas y bibliografía en Word/Open Office vía Zotero. El mejor entorno que conozco para hacer esto es Atom, porque sirve tanto para Latex como para Markdown. También hay una forma en Rstudio vía la librería/add-in "citr". Comenzamos con esta:
 
@@ -174,18 +174,18 @@ Por supuesto, almacenar manualmente referencias en este formato bib no es muy am
               - pandoc options: citations
             - en el documento .md crear al principio un YAML header con el path hacia el bib:
 
-    ```
+    ````
     ---
     bibliography:
     - '/media/ntfs/Dropbox/zoterojcydocs/MyLibrary.bib'
     ---
-    ```
+    ````
 
       - con esto, luego el MPP muestra las citas (en el preview)
 
 
       - Convertir: el paquete pandoc-convert (hasta ahora) no convierte las citas, solo el texto. Lo que funciona es vía linea de comando, abriendo terminal desde atom y:
 
-  ```
+  ````
   pandoc -s -S --bibliography MyLibrary.bib --filter pandoc-citeproc --csl apa-cv.csl inequality_perception_issp.md -o inequality_perception_issp.html
-  ```
+  ````
