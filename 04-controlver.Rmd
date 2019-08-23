@@ -1,0 +1,18 @@
+# Control de versiones
+
+
+Pasos
+
+1. Instalar Git a nivel local
+
+sudo apt-get install git
+
+2. Abrir cuenta en Github
+
+3. Vincular local con Github
+
+En terminal:
+
+```git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```

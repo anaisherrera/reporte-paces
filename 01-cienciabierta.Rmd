@@ -1,0 +1,17 @@
+# Introducción
+
+¿Es la ciencia una actividad cerrada? El uso de la palabra _abierta_ junto a _ciencia_ tiene sin duda un sentido crítico hacia formas de hacer ciencia que se caracterizan por las restricciones y el cierre. Parte importante de esta crítica tiene que ver con el difícil acceso a los resultados de investigaciones científicas, por barreras tanto comunicacionales como también económicas. El concepto de "barreras de pago" (paywall), una de las principales críticas a la ciencia actual, justamente consiste en que se debe pagar para poder acceder al conocimiento que en gran parte ha sido financiado por fondos públicos. Cuando el acceso al conocimiento está mediado por el tamaño de la billetera, sin duda surgen una serie de cuestionamientos sobre si esta forma de hacer y divulgar ciencia es la correcta.
+
+...
+
+Este libro tiene dos fuentes de inspiración principales. La primera es un artículo de Jake Bowers titulado "Six steps for a better relationship with your future self", y la segunda es el trabajo de Kieran Healey, en particular su libro de "The Plain Person’s Guide to Plain Text Social Science." [@Healy2018PlainPersonGuide]
+
+Idea 2: Existen muchos libros, páginas y foros de análisis de datos; también existen manuales de escriura tipo "como hacer una tesis" o "diseño de investigación social", pero casi no hay guias que discutan y apoyen las deciciones que se toman en el proceso mismo de la investigación. ¿Dónde escribo? ¿Cómo analizo los datos? ¿Cuál es la mejor manera de colaborar? Estos procesos son cerrados, tal como académicos y académicas se encierran en sus oficinas a producir con maneras sui-generis y que cada uno va escogiendo según le acomoda. ...
+
+
+Temas a abordar:
+
+- Acceso
+- Reproducibilidad
+- Colaboración
+- Comunicación
