@@ -1,4 +1,4 @@
-# Control de versiones
+## Control de versiones
 
 
 Pasos
@@ -13,6 +13,7 @@ sudo apt-get install git
 
 En terminal:
 
-```git config --global user.email "you@example.com"
+```
+git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```

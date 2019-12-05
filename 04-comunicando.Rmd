@@ -1,0 +1,9 @@
+# Comunicando la investigación
+
+```{r, child="docurep.Rmd"}
+
+```
+
+## Publicación de resultados
+
+

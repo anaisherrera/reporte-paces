@@ -1,10 +1,10 @@
-# Citando plano
+### Citando plano: Bibtex & Zotero
 
 *Objetivo*: facilitar la inclusión de citas y referencias bibliográficas en documentos escritos en texto plano (Markdown / Latex).
 
 <br/>
 
-## Bibtex, Zotero y Better BibTex (BBT)
+#### Bibtex, Zotero y Better BibTex (BBT)
 
 La forma general como funciona la inclusión de referencias en texto plano (Latex/Markdown) es tenerlas almacenadas en formato Bibtex (archivos en extensión _.bib_). Este formato almacena las referencias en base a ciertos campos donde se incluye la información correspondiente. Por ejemplo:
 
@@ -43,14 +43,14 @@ Por supuesto, almacenar manualmente referencias en este formato bib no es muy am
   - Más información sobre BBT: <https://github.com/retorquere/zotero-better-bibtex/wiki>
   -  (NOTA: en caso que no funcione, puede ser por problemas exportando con la nueva versión de Zotero (5); la adaptación de BBT se encuentra en desarrollo, ver <https://github.com/retorquere/zotero-better-bibtex/issues/555>); por lo tanto, si hay problemas con la instalación tradicional con el Zotero 5, se recomienda instalar la versión 4 de Zotero Standalone, y bajar la versión previa correspondiente de la extensión <https://github.com/retorquere/zotero-better-bibtex/releases/tag/1.6.100>)
 
-### Sobre exportar referencias en trabajo colaborativo
+##### Sobre exportar referencias en trabajo colaborativo
 
 - Aquí, una opción es dar el link desde Markdown/Latex al archivo completo de Zotero (del autor a cargo), pero en general es muy pesado y contiene todas las referencias, no el subgrupo que se utiliza en el paper. Por lo tanto, se recomienda hacer lo siguiente:
     -  crear una colección/carpeta compartida de Zotero (asumiendo escenario de trabajo colaborativo) donde se copian las referencias que se utilizan en el paper. Esto es fácil en Zotero, solo se arrastran, y no hace que toda la información se duplique, es solo un link. Como es compartida, cualquier miembro del equipo puede modificar. Precaución: el nombre de esta carpeta sin espacios y sin acentos
     - El coordinador/primer autor exporta esta colección a la carpeta del proyecto colaborativo (eventualmente un dropbox) donde está el tex/md. Para ello, botón derecho sobre la carpeta, "export library", seleccionar *format Better Bibtex*, y nuevamente, muy importante: check box "keep updated", así cualquier cambio que se haga en la colección desde Zotero se reflejará en el .bib. Guardar en la carpeta donde se encuentra el archivo tex
     - Luego, revisar en la pestaña de BBT de preferencias, en automatic export, que la carpeta efectivamente está en el listado. Además, marcar la opción "on change".
 
-## Referenciando en TEX
+#### Referenciando en TEX
 
   - En el preámbulo (hay diferentes opciones de formato, pero para estilo clásico APA):
 
@@ -85,7 +85,7 @@ Por supuesto, almacenar manualmente referencias en este formato bib no es muy am
     - Atención: si se quiere cambiar el estilo (\bibliographystyle{}), a veces no lo reconoce y se queda con el anterior o arroja error; la opción que me resulta es borrar los archivos aux y bbl, y luego compilar nuevamente.
     - También hay problemas cuando alguna entrada del archivo .bib no tiene el año, en este archivo aparecen como ???? y esto crea dificultades de compilación. Importante: arreglar esto en Zotero (no en bib ni bbl), sincronizar nuevamente y compilar.
 
-## Referenciando en Markdown
+#### Referenciando en Markdown
 
 - se establece la ruta al archivo bib en el YAML header, al comienzo del documento, por ejemplo:
 
@@ -119,7 +119,7 @@ Por supuesto, almacenar manualmente referencias en este formato bib no es muy am
     - Luego en el add-in (desplegable, o tools/add-ins) aparece "insert citations", si está bien especificado el bib en el YAML debería aparecer aquí la lista de referencias.
 
 
-    ## Markdown / Xaringan
+#### Markdown / Xaringan
 
     [Xaringan]() es una librería de R que permite generar presentaciones en html basadas en [remark](https://remarkjs.com), que utiliza una estructura simple de markdown. Básicamente, lo que hace Remark es compilar un markdown + un poco de css a un html, y Xaringan se encarga de la parte css así que el usuario trabaja (casi) solo en markdown.
 

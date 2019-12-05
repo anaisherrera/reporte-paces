@@ -1,4 +1,4 @@
-# Documentos reproducibles
+## Documentos reproducibles
 
 En la investigación académica en general el proceso de escritura se encuentra separado del análisis, en programas y documentos distintos. El traspaso de información entre el programa de análisis y el programa de edición de texto se realiza con un clásico: cortar y pegar.
 
@@ -10,7 +10,7 @@ _¿Cuáles son las desventajas de cortar y pegar?_
 
 Los **documentos dinámicos** permiten lidiar con las limitaciones anteriores, ya que los análisis y resultados están en un mismo documento. Esto es posible ya que se combinan dos lenguajes en texto plano: escritura y código de análisis. La clave es que el programa de edición y de análisis pueda identificar qué secciones del texto corresponden a escritura y cuáles corresponden a análisis.
 
-## Sobre texto plano
+### Sobre texto plano
 
 _¿Por qué escribir en texto plano en lugar de un programa que me muestre inmediatamente el texto y su formato (tipo Word)?_
 Hay múltiples razones, solo resalto dos:
@@ -22,13 +22,13 @@ Hay múltiples razones, solo resalto dos:
 Actualmente existen una serie de herramientas que facilitan la elaboración de documentos dinámicos, en particular basados en la librería `knitr` (tejer). Esta librería permite generar documentos escritos en lenguaje Markdown y análisis realizado en R.
 
 
-## Markdown
+### Markdown
 
 Combinar texto y código de análisis requiere que ambos puedan ser generados en una misma plataforma. Y para poder hacer esto, una solución es que lo que se escriba en el documento sea libre de plataforma. El texto plano es una forma de escribir que no requiere ningún programa especial para poder acceder o generar un documento. El ejemplo más cercano para los usuarios de Windows son los archivos .txt, que se pueden abrir con cualquier editor simple.
 
 Ahora bien, también para escribir necesitamos elementos de edición, como por ejemplo encabezados, listas, imágenes, negritas, cursivas. Y es aquí donde Markdown permite integrar elementos de edición en texto plano. ¿Cómo se hace? incorporando código o "marcas" de edición, pero de la manera más simple posible (de ahí el nombre markdown, marcas bajas o pocas marcas). Estas marcas indican las partes del texto que luego serán interpretadas de una manera especial al momento de convertir el documento a otro formato que sea más amigable a la publicación (como html o pdf). Por lo tanto, la manera de trabajar es en base a un editor de texto plano, y que al final se convierte a un documento publicable.
 
-### Marcas de edición
+#### Marcas de edición
 
 **Títulos**
 
@@ -150,7 +150,7 @@ y           | este     | el
 contenido   | de las   | celdas
 
 
-## Knitr
+### Knitr
 
 Knitr es una librería de R que convierte (compila) documentos escritos en Rmarkdown y que combinan texto y análisis hacia otros formatos. Esto es posible ya que reconoce marcas de edición y código de análisis y permite su transformación a formatos como pdf, word y html. Una representación del flujo según Healey es la siguiente:
 
@@ -160,7 +160,7 @@ El documento central de trabajo es uno en formato .Rmd (Rmarkdown), que combina 
 
 No es necesario conocer al detalle todos los elementos de este flujo para hacer funcionar un documento dinámico, sino básicamente dos: 1) Markdown, y 2) Trozos de código. Vamos por parte.
 
-### Trozos (chunks) de código
+#### Trozos (chunks) de código
 
 La caracteristica principal de `Knitr` es que identifica las secciones de código en la hoja y los ejecuta mediante R. Estos trozos de código se encuentran delimitados de la siguiente manera:
 ````
@@ -171,7 +171,7 @@ La caracteristica principal de `Knitr` es que identifica las secciones de códig
 
 Es decir, todo lo que comience por ` ```r` y termine con ` ``` ` será identificado como código de análisis (el atajo para generar un chunk en RStudio es `ctrl+alt+i`)
 
-### Tipos de chunks
+#### Tipos de chunks
 
 En general hay cinco opciones básicas de edición relacionadas con chunks y su visualización en el documento final. Esto se maneja mediante opciones que aparecen al inicio en el chunk, luego de la letra `r`
 
@@ -219,7 +219,7 @@ Resulta:
 4. ni código ni resultado `{r echo=FALSE results='hide'}`
 5. resultado "tal cual como es": `{r results='asis'}` se utiliza principalmente para comandos de generación de tablas, que arrojan un código que luego puede ser interpretado por otro lenguaje (por ejemplo, html)
 
-## Trabajando con documentos dinámicos en RStudio
+### Trabajando con documentos dinámicos en RStudio
 
 RStudio es principalmente un editor para análisis de datos con R, pero últimamente ha ido incorporando herramientas para reportes dinámicos. Para ello utiliza un tipo de archivos con extensión `Rmd` que significa Rmarkdown. Y en este contexto Rmarkdown es la forma en que Rstudio identifica los archivos que combinan texto y código.
 

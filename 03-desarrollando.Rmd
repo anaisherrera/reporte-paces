@@ -1,0 +1,19 @@
+# Desarrollando la investigación
+
+
+```{r, child="flujosrep.Rmd"}
+
+```
+
+### Organización: carpetas y path relativos
+### Orden de código
+### Colaboración en Github: forks, pull requests, issues y projects
+
+```{r, child="citandoplano.Rmd"}
+
+```
+
+```{r, child="controlver.Rmd"}
+
+```
+
