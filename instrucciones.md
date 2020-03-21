@@ -12,6 +12,11 @@ You can find the preview of this example at https://bookdown.org/yihui/bookdown-
 - index.Rmd define los parametros centrales del libro en el yaml, además genera la frontpage
 - los capítulos se van ordenando según el número con que comienzan los archivos Rmd en el root. Por ejemplo, 01-intro.Rmd sera el primer capítulo
 - El, título del capítulo, que aparece también en el índice, queda definido por el primer título (#) del documento Rmd
+- para deploy en github pages
+  - crear un archivo vacío en el root "nojekyll"
+  - en _bookdown.yml agregar  output_dir: "docs"
+  - en github settings ir a github pages y establecer docs folder como directorio
+
 
 ## Desde Atom
 rmarkdown::render_site(output_format = 'bookdown::gitbook', encoding = 'UTF-8')
