@@ -1,6 +1,6 @@
 ---
 title: "Investigación Social Abierta"
-subtitle: "Herramientas para la reproducibilidad,  colaboración y comunicación académica"
+subtitle: "Herramientas para la reproducibilidad, colaboración y comunicación académica"
 author: "Juan Carlos Castillo"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -24,35 +24,41 @@ Este es un libro orientado a describir herramientas de investigación reproducib
 
 Capítulos a desarrollar:
 
-1- Introducción
 
-2- Ciencia Abierta
+**I. Preparando la investigación**
 
-3- Documentos reproducibles
+1. Prerregistros
+2. Reportes registrados
+3. Documentación de datos
 
-  - Markdown / Rmarkdown
-  - Tejiendo escritura y análisis: Knitr
-  - Pandoc, plantillas y salidas
+**II. Desarrollando la investigación**
 
-4- Citando plano: Bibtex & Zotero
-
-5- Control de versiones
-
-6- Flujos reproducibles
-
+1. Reproducibilidad
   - Organización: carpetas y path relativos
   - Orden de código
   - Colaboración en Github: forks, pull requests, issues y projects
+  - Citando plano: Bibtex & Zotero
 
-7- Comunicación
+2. Control de versiones
 
+**III. Comunicar la investigación**
+
+1. Documentos reproducibles
+  - Markdown / Rmarkdown
+  - Tejiendo escritura y análisis: Knitr
+  - Pandoc, plantillas y salidas
+  - Documentos con parámetros
+
+2. Publicación de resultados
   - Publicación web vía Rmarkdown, blogdown & bookdown
+  - Preprints, Postprints & Acceso Abierto
   - Presentando: Xaringan
   - Open Science Framework & SocArxiv
   - Repositorios (Dataverse)
 
-8- Apéndice: Implementación de Flujo X en Atom
+Apéndice: Implementación de Flujo X en Atom
 
+Referencias
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages

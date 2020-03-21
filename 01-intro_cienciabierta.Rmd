@@ -1,4 +1,4 @@
-# Introducción
+# Introducción {-}
 
 ¿Es la ciencia una actividad cerrada? El uso de la palabra _abierta_ junto a _ciencia_ tiene sin duda un sentido crítico hacia formas de hacer ciencia que se caracterizan por las restricciones y el cierre. Parte importante de esta crítica tiene que ver con el difícil acceso a los resultados de investigaciones científicas, por barreras tanto comunicacionales como también económicas. El concepto de "barreras de pago" (paywall), una de las principales críticas a la ciencia actual, justamente consiste en que se debe pagar para poder acceder al conocimiento que en gran parte ha sido financiado por fondos públicos. Cuando el acceso al conocimiento está mediado por el tamaño de la billetera, sin duda surgen una serie de cuestionamientos sobre si esta forma de hacer y divulgar ciencia es la correcta.
 
