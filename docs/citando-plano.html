@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html >
-
+<html lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Capitulo 3 Citando plano | Investigación Social Abierta</title>
-  <meta name="description" content="Libro Investigación Social Abierta">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1.5 Citando plano | Investigación Social Abierta</title>
+  <meta name="description" content="Libro Investigación Social Abierta" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Capitulo 3 Citando plano | Investigación Social Abierta" />
+  <meta property="og:title" content="1.5 Citando plano | Investigación Social Abierta" />
   <meta property="og:type" content="book" />
   
   
@@ -17,23 +16,23 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Capitulo 3 Citando plano | Investigación Social Abierta" />
+  <meta name="twitter:title" content="1.5 Citando plano | Investigación Social Abierta" />
   
   <meta name="twitter:description" content="Libro Investigación Social Abierta" />
   
 
-<meta name="author" content="Juan Carlos Castillo">
+<meta name="author" content="Juan Carlos Castillo" />
 
 
-<meta name="date" content="2019-08-23">
+<meta name="date" content="2020-05-19" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="documentos-reproducibles.html">
-<link rel="next" href="control-de-versiones.html">
+<link rel="prev" href="rmarkdown-knitr.html"/>
+<link rel="next" href="protocolo-de-proyecto-reproducible.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -41,6 +40,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -56,7 +58,6 @@ a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
 a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
@@ -131,30 +132,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Presentación</a></li>
-<li class="chapter" data-level="1" data-path="introduccion.html"><a href="introduccion.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
-<li class="chapter" data-level="2" data-path="documentos-reproducibles.html"><a href="documentos-reproducibles.html"><i class="fa fa-check"></i><b>2</b> Documentos reproducibles</a><ul>
-<li class="chapter" data-level="2.1" data-path="documentos-reproducibles.html"><a href="documentos-reproducibles.html#sobre-texto-plano"><i class="fa fa-check"></i><b>2.1</b> Sobre texto plano</a></li>
-<li class="chapter" data-level="2.2" data-path="documentos-reproducibles.html"><a href="documentos-reproducibles.html#markdown"><i class="fa fa-check"></i><b>2.2</b> Markdown</a><ul>
-<li class="chapter" data-level="2.2.1" data-path="documentos-reproducibles.html"><a href="documentos-reproducibles.html#marcas-de-edicion"><i class="fa fa-check"></i><b>2.2.1</b> Marcas de edición</a></li>
+<li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html"><i class="fa fa-check"></i>Introducción</a></li>
+<li class="chapter" data-level="1" data-path="lenguaje-reproducible.html"><a href="lenguaje-reproducible.html"><i class="fa fa-check"></i><b>1</b> Lenguaje reproducible</a><ul>
+<li class="chapter" data-level="1.1" data-path="escritura-académica-y-procesadores-de-textos-.html"><a href="escritura-académica-y-procesadores-de-textos-.html"><i class="fa fa-check"></i><b>1.1</b> Escritura académica y procesadores de textos.</a></li>
+<li class="chapter" data-level="1.2" data-path="markdown.html"><a href="markdown.html"><i class="fa fa-check"></i><b>1.2</b> Markdown</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="markdown.html"><a href="markdown.html#marcas-de-edición-en-markdown"><i class="fa fa-check"></i><b>1.2.1</b> Marcas de edición en Markdown</a></li>
+<li class="chapter" data-level="1.2.2" data-path="markdown.html"><a href="markdown.html#opciones-adicionales-de-formato-en-markdown"><i class="fa fa-check"></i><b>1.2.2</b> Opciones adicionales de formato en Markdown</a></li>
+<li class="chapter" data-level="1.2.3" data-path="markdown.html"><a href="markdown.html#sobre-los-archivos-markdown"><i class="fa fa-check"></i><b>1.2.3</b> Sobre los archivos Markdown</a></li>
+<li class="chapter" data-level="1.2.4" data-path="markdown.html"><a href="markdown.html#usando-rstudio-como-editor-de-markdown"><i class="fa fa-check"></i><b>1.2.4</b> Usando RStudio como editor de Markdown</a></li>
 </ul></li>
-<li class="chapter" data-level="2.3" data-path="documentos-reproducibles.html"><a href="documentos-reproducibles.html#knitr"><i class="fa fa-check"></i><b>2.3</b> Knitr</a><ul>
-<li class="chapter" data-level="2.3.1" data-path="documentos-reproducibles.html"><a href="documentos-reproducibles.html#trozos-chunks-de-codigo"><i class="fa fa-check"></i><b>2.3.1</b> Trozos (chunks) de código</a></li>
-<li class="chapter" data-level="2.3.2" data-path="documentos-reproducibles.html"><a href="documentos-reproducibles.html#tipos-de-chunks"><i class="fa fa-check"></i><b>2.3.2</b> Tipos de chunks</a></li>
+<li class="chapter" data-level="1.3" data-path="documentos-dinámicos-con-rmarkdown.html"><a href="documentos-dinámicos-con-rmarkdown.html"><i class="fa fa-check"></i><b>1.3</b> Documentos dinámicos con RMarkdown</a></li>
+<li class="chapter" data-level="1.4" data-path="rmarkdown-knitr.html"><a href="rmarkdown-knitr.html"><i class="fa fa-check"></i><b>1.4</b> Rmarkdown / Knitr</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="rmarkdown-knitr.html"><a href="rmarkdown-knitr.html#trozos-chunks-de-código"><i class="fa fa-check"></i><b>1.4.1</b> Trozos (chunks) de código</a></li>
+<li class="chapter" data-level="1.4.2" data-path="rmarkdown-knitr.html"><a href="rmarkdown-knitr.html#tipos-de-chunks"><i class="fa fa-check"></i><b>1.4.2</b> Tipos de chunks</a></li>
+<li class="chapter" data-level="1.4.3" data-path="rmarkdown-knitr.html"><a href="rmarkdown-knitr.html#trabajando-con-documentos-dinámicos-en-rstudio"><i class="fa fa-check"></i><b>1.4.3</b> Trabajando con documentos dinámicos en RStudio</a></li>
 </ul></li>
-<li class="chapter" data-level="2.4" data-path="documentos-reproducibles.html"><a href="documentos-reproducibles.html#trabajando-con-documentos-dinamicos-en-rstudio"><i class="fa fa-check"></i><b>2.4</b> Trabajando con documentos dinámicos en RStudio</a></li>
+<li class="chapter" data-level="1.5" data-path="citando-plano.html"><a href="citando-plano.html"><i class="fa fa-check"></i><b>1.5</b> Citando plano</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="citando-plano.html"><a href="citando-plano.html"><i class="fa fa-check"></i><b>3</b> Citando plano</a><ul>
-<li class="chapter" data-level="3.1" data-path="citando-plano.html"><a href="citando-plano.html#bibtex-zotero-y-better-bibtex-bbt"><i class="fa fa-check"></i><b>3.1</b> Bibtex, Zotero y Better BibTex (BBT)</a><ul>
-<li class="chapter" data-level="3.1.1" data-path="citando-plano.html"><a href="citando-plano.html#sobre-exportar-referencias-en-trabajo-colaborativo"><i class="fa fa-check"></i><b>3.1.1</b> Sobre exportar referencias en trabajo colaborativo</a></li>
+<li class="chapter" data-level="2" data-path="protocolo-de-proyecto-reproducible.html"><a href="protocolo-de-proyecto-reproducible.html"><i class="fa fa-check"></i><b>2</b> Protocolo de proyecto reproducible</a><ul>
+<li class="chapter" data-level="2.1" data-path="protocolos-de-estructura-de-carpetas-reproducibles.html"><a href="protocolos-de-estructura-de-carpetas-reproducibles.html"><i class="fa fa-check"></i><b>2.1</b> Protocolos de estructura de carpetas reproducibles</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="citando-plano.html"><a href="citando-plano.html#referenciando-en-tex"><i class="fa fa-check"></i><b>3.2</b> Referenciando en TEX</a></li>
-<li class="chapter" data-level="3.3" data-path="citando-plano.html"><a href="citando-plano.html#referenciando-en-markdown"><i class="fa fa-check"></i><b>3.3</b> Referenciando en Markdown</a></li>
+<li class="chapter" data-level="3" data-path="control-de-versiones.html"><a href="control-de-versiones.html"><i class="fa fa-check"></i><b>3</b> Control de versiones</a><ul>
+<li class="chapter" data-level="3.1" data-path="qué-es-git.html"><a href="qué-es-git.html"><i class="fa fa-check"></i><b>3.1</b> ¿Qué es Git?</a></li>
+<li class="chapter" data-level="3.2" data-path="instalación.html"><a href="instalación.html"><i class="fa fa-check"></i><b>3.2</b> Instalación</a></li>
+<li class="chapter" data-level="3.3" data-path="funcionamiento.html"><a href="funcionamiento.html"><i class="fa fa-check"></i><b>3.3</b> Funcionamiento</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="control-de-versiones.html"><a href="control-de-versiones.html"><i class="fa fa-check"></i><b>4</b> Control de versiones</a></li>
-<li class="chapter" data-level="5" data-path="flujos-reproducibles-y-colaborativos.html"><a href="flujos-reproducibles-y-colaborativos.html"><i class="fa fa-check"></i><b>5</b> Flujos reproducibles y colaborativos</a></li>
-<li class="chapter" data-level="6" data-path="comunicacion.html"><a href="comunicacion.html"><i class="fa fa-check"></i><b>6</b> Comunicación</a></li>
-<li class="chapter" data-level="7" data-path="flujo-x-en-atom.html"><a href="flujo-x-en-atom.html"><i class="fa fa-check"></i><b>7</b> Flujo X en Atom</a></li>
-<li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
+<li class="chapter" data-level="4" data-path="publicación.html"><a href="publicación.html"><i class="fa fa-check"></i><b>4</b> Publicación</a></li>
+<li class="chapter" data-level="5" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i><b>5</b> Referencias</a></li>
+<li class="chapter" data-level="" data-path="referencias-1.html"><a href="referencias-1.html"><i class="fa fa-check"></i>Referencias</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -175,12 +180,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="citando-plano" class="section level1">
-<h1><span class="header-section-number">Capitulo 3</span> Citando plano</h1>
+<div id="citando-plano" class="section level2">
+<h2><span class="header-section-number">1.5</span> Citando plano</h2>
 <p><em>Objetivo</em>: facilitar la inclusión de citas y referencias bibliográficas en documentos escritos en texto plano (Markdown / Latex).</p>
 <p><br/></p>
-<div id="bibtex-zotero-y-better-bibtex-bbt" class="section level2">
-<h2><span class="header-section-number">3.1</span> Bibtex, Zotero y Better BibTex (BBT)</h2>
+<div id="bibtex-zotero-y-better-bibtex-bbt" class="section level4">
+<h4><span class="header-section-number">1.5.0.1</span> Bibtex, Zotero y Better BibTex (BBT)</h4>
 <p>La forma general como funciona la inclusión de referencias en texto plano (Latex/Markdown) es tenerlas almacenadas en formato Bibtex (archivos en extensión <em>.bib</em>). Este formato almacena las referencias en base a ciertos campos donde se incluye la información correspondiente. Por ejemplo:</p>
 <pre><code>@article{sabbagh_dimension_2003,
   title = {The Dimension of Social Solidarity in Distributive Justice},
@@ -216,8 +221,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Más información sobre BBT: <a href="https://github.com/retorquere/zotero-better-bibtex/wiki" class="uri">https://github.com/retorquere/zotero-better-bibtex/wiki</a></li>
 <li>(NOTA: en caso que no funcione, puede ser por problemas exportando con la nueva versión de Zotero (5); la adaptación de BBT se encuentra en desarrollo, ver <a href="https://github.com/retorquere/zotero-better-bibtex/issues/555" class="uri">https://github.com/retorquere/zotero-better-bibtex/issues/555</a>); por lo tanto, si hay problemas con la instalación tradicional con el Zotero 5, se recomienda instalar la versión 4 de Zotero Standalone, y bajar la versión previa correspondiente de la extensión <a href="https://github.com/retorquere/zotero-better-bibtex/releases/tag/1.6.100" class="uri">https://github.com/retorquere/zotero-better-bibtex/releases/tag/1.6.100</a>)</li>
 </ul>
-<div id="sobre-exportar-referencias-en-trabajo-colaborativo" class="section level3">
-<h3><span class="header-section-number">3.1.1</span> Sobre exportar referencias en trabajo colaborativo</h3>
+<div id="sobre-exportar-referencias-en-trabajo-colaborativo" class="section level5">
+<h5><span class="header-section-number">1.5.0.1.1</span> Sobre exportar referencias en trabajo colaborativo</h5>
 <ul>
 <li>Aquí, una opción es dar el link desde Markdown/Latex al archivo completo de Zotero (del autor a cargo), pero en general es muy pesado y contiene todas las referencias, no el subgrupo que se utiliza en el paper. Por lo tanto, se recomienda hacer lo siguiente:
 <ul>
@@ -228,8 +233,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 </div>
 </div>
-<div id="referenciando-en-tex" class="section level2">
-<h2><span class="header-section-number">3.2</span> Referenciando en TEX</h2>
+<div id="referenciando-en-tex" class="section level4">
+<h4><span class="header-section-number">1.5.0.2</span> Referenciando en TEX</h4>
 <ul>
 <li>En el preámbulo (hay diferentes opciones de formato, pero para estilo clásico APA):</li>
 </ul>
@@ -263,8 +268,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul>
 </div>
-<div id="referenciando-en-markdown" class="section level2">
-<h2><span class="header-section-number">3.3</span> Referenciando en Markdown</h2>
+<div id="referenciando-en-markdown" class="section level4">
+<h4><span class="header-section-number">1.5.0.3</span> Referenciando en Markdown</h4>
 <ul>
 <li><p>se establece la ruta al archivo bib en el YAML header, al comienzo del documento, por ejemplo:</p>
 <pre><code>---
@@ -291,94 +296,99 @@ bibliography:
 <li>Instalar citr</li>
 <li>reiniciar</li>
 <li>Luego en el add-in (desplegable, o tools/add-ins) aparece “insert citations”, si está bien especificado el bib en el YAML debería aparecer aquí la lista de referencias.</li>
+</ul></li>
+</ul></li>
 </ul>
-<h2 id="markdown-xaringan"><span class="header-section-number">3.3</span> Markdown / Xaringan</h2>
-<p><a href="">Xaringan</a> es una librería de R que permite generar presentaciones en html basadas en <a href="https://remarkjs.com">remark</a>, que utiliza una estructura simple de markdown. Básicamente, lo que hace Remark es compilar un markdown + un poco de css a un html, y Xaringan se encarga de la parte css así que el usuario trabaja (casi) solo en markdown.</p>
-<p>El problema: para generar el html no pasa por pandoc, así que no sigue la misma lógica de las citas de markdown. Pero … todo tiene una vuelta de tuerca, y en este caso se puede utilizando el paquete de R <a href="https://github.com/ropensci/RefManageR">RefManageR</a>.</p>
-<ol style="list-style-type: decimal">
-<li>Indicar paquete y librería: en un chunk de setup luego del YAML header. La librería se indica con la función ReadBib de RefManageR (en este caso, en el mismo directorio, si no dar el path)</li>
-</ol>
-<pre><code>  ```{r setup, include=FALSE}
+</div>
+<div id="markdown-xaringan" class="section level4">
+<h4><span class="header-section-number">1.5.0.4</span> Markdown / Xaringan</h4>
+<pre><code>[Xaringan]() es una librería de R que permite generar presentaciones en html basadas en [remark](https://remarkjs.com), que utiliza una estructura simple de markdown. Básicamente, lo que hace Remark es compilar un markdown + un poco de css a un html, y Xaringan se encarga de la parte css así que el usuario trabaja (casi) solo en markdown.
+
+El problema: para generar el html no pasa por pandoc, así que no sigue la misma lógica de las citas de markdown. Pero ... todo tiene una vuelta de tuerca, y en este caso se puede utilizando el paquete de R [RefManageR](https://github.com/ropensci/RefManageR).
+
+1. Indicar paquete y librería: en un chunk de setup luego del YAML header. La librería se indica con la función ReadBib de RefManageR (en este caso, en el mismo directorio, si no dar el path)
+
+
+````
+  ```{r setup, include=FALSE}
    options(htmltools.dir.version = TRUE)
    pacman::p_load(RefManageR)
    bib &lt;- ReadBib(&quot;merit_pref_int.bib&quot;, check = FALSE)
-  ```</code></pre>
-<ol start="2" style="list-style-type: decimal">
-<li><p>Para citar: los comandos básicos del RefManageR son Cite(), Citep() y Citet() (como en natbib), y en el paréntesis va el nombre del objeto generado antes y que contiene las referencias (bib) y la clave de la referencia como está en el Bibtex. Ejemplo: Cite(bib, “castillo_2018”). Ahora, como se trata de compilar a html sin pasar por pandoc, hay que dar la instrucción para que R/RefManageR hagan el trabajo, así que la cita se escribe en un mini-chunk de código: r Cite (bib, “castillo_2018”)</p></li>
-<li><p>Algunas complicaciones del RefManagerR</p></li>
-</ol>
-<ul>
-<li>muy estricto con la librería .bib, si hay algo que falta en algún campo va a reportar el error. Por lo tanto, a menos que el .bib de la colección completa esté perfecto, es mejor hacer una subcolección de Zotero con las referencias y esta exportarla como Bibtext a la carpeta correspondiente donde se está trabajando</li>
-<li>se puede usar el Zotero Picker en Atom para facilitar el trabajo, pero hay que sacarle manualmente la @ inicial que es automática para referencias en markdown que pasan por pandoc</li>
-</ul>
-<ol start="4" style="list-style-type: decimal">
-<li>Para generar las referencias: en la lámina que corresponde, incluir:</li>
-</ol>
-<pre><code>```{r, results=&#39;asis&#39;, echo=FALSE}
+  ```
+````
+
+
+2. Para citar: los comandos básicos del RefManageR son Cite(), Citep() y Citet() (como en natbib), y en el paréntesis va el nombre del objeto generado antes y que contiene las referencias (bib) y la clave de la referencia como está en el Bibtex. Ejemplo: Cite(bib, &quot;castillo_2018&quot;). Ahora, como se trata de compilar a html sin pasar por pandoc, hay que dar la instrucción para que R/RefManageR hagan el trabajo, así que la cita se escribe en un mini-chunk de código:  r Cite (bib, &quot;castillo_2018&quot;)
+
+3. Algunas complicaciones del RefManagerR
+
+  - muy estricto con la librería .bib, si hay algo que falta en algún campo va a reportar el error. Por lo tanto, a menos que el .bib de la colección completa esté perfecto, es mejor hacer una subcolección de Zotero con las referencias y esta exportarla como Bibtext a la carpeta correspondiente donde se está trabajando
+  - se puede usar el Zotero Picker en Atom para facilitar el trabajo, pero hay que sacarle manualmente la @ inicial que es automática para referencias en markdown que pasan por pandoc
+
+4. Para generar las referencias: en la lámina que corresponde, incluir:
+
+````
+```{r, results=&#39;asis&#39;, echo=FALSE}
 PrintBibliography(bib)
-```</code></pre>
-<h2 id="usando-atom-para-flujo-de-trabajo-academico-en-texto-plano-con-citas"><span class="header-section-number">3.3</span> Usando Atom para flujo de trabajo académico en texto plano con citas</h2>
-<p>Aquí hay tres cosas que ver: insertar, preview y convert</p>
-<ul>
-<li>Insertar:
-<ul>
-<li>para insertar citaciones lo más fácil es instalar el zotero-picker, que automáticamente detecta la librería bib que se encuentra en la misma carpeta de Zotero (vía Better Bibtex). Funciona igual que el plugin clásico para procesadores de texto, shortcut alt-z</li>
-<li>otra alternativa que se puede instalar en paralelo es el autocomplete-bibtex, que busca la cita una vez escrito @ y las tres primeras letras, asumiendo que la bib está en el mismo directorio (o probar también si funciona dando el path con YAML)</li>
-</ul></li>
-<li>Preview
-<ul>
-<li>markdown se puede visualizar simultáneamente en atom con el paquete markdown-preview-plus (MPP) (ctrl+shift+m). Para que aparezcan las citas y la bibliografía se deben hacer un par de ajustes (* si se instala Rmarkdown, pandoc ya está instalado, pero en el directorio de R y Atom no lo reconoce, por eso recomiendo instalarlo nuevamente):
-<ul>
-<li>instalar pandoc, en ubuntu
-<ul>
-<li>sudo apt-get update</li>
-<li>sudo apt-get install pandoc</li>
-<li>chequear instalado: dpkg -L pandoc</li>
-</ul></li>
-<li>instalar pandoc citeproc
-<ul>
-<li>sudo apt-get update</li>
-<li>sudo apt-get install pandoc-citeproc</li>
-</ul></li>
-<li>en las opciones del paquete
-<ul>
-<li>enable pandoc parser</li>
-<li>pandoc options: citations</li>
-</ul></li>
-<li>en el documento .md crear al principio un YAML header con el path hacia el bib:</li>
-</ul></li>
-</ul></li>
-</ul>
-<pre><code>---
+```
+````
+
+## Usando Atom para flujo de trabajo académico en texto plano con citas
+
+Aquí hay tres cosas que ver: insertar, preview y convert
+
+  - Insertar:
+      - para insertar citaciones lo más fácil es instalar el zotero-picker, que automáticamente detecta la librería bib que se encuentra en la misma carpeta de Zotero (vía Better Bibtex). Funciona igual que el plugin clásico para procesadores de texto, shortcut alt-z
+      - otra alternativa que se puede instalar en paralelo es el autocomplete-bibtex, que busca la cita una vez escrito @ y las tres primeras letras, asumiendo que la bib está en el mismo directorio (o probar también si funciona dando el path con YAML)
+
+  - Preview
+      - markdown se puede visualizar simultáneamente en atom con el paquete markdown-preview-plus (MPP) (ctrl+shift+m). Para que aparezcan las citas y la bibliografía se deben hacer un par de ajustes (* si se instala Rmarkdown, pandoc ya está instalado, pero en el directorio de R y Atom no lo reconoce, por eso recomiendo instalarlo nuevamente):
+        - instalar pandoc, en ubuntu
+          - sudo apt-get update
+          - sudo apt-get install pandoc
+          - chequear instalado: dpkg -L pandoc
+        - instalar pandoc citeproc
+          - sudo apt-get update
+          - sudo apt-get install pandoc-citeproc
+        - en las opciones del paquete
+          - enable pandoc parser
+          - pandoc options: citations
+        - en el documento .md crear al principio un YAML header con el path hacia el bib:
+
+````
+---
 bibliography:
 - &#39;/media/ntfs/Dropbox/zoterojcydocs/MyLibrary.bib&#39;
----</code></pre>
-<ul>
-<li><p>con esto, luego el MPP muestra las citas (en el preview)</p></li>
-<li><p>Convertir: el paquete pandoc-convert (hasta ahora) no convierte las citas, solo el texto. Lo que funciona es vía linea de comando, abriendo terminal desde atom y:</p></li>
-</ul></li>
-</ul>
-<pre><code>pandoc -s -S --bibliography MyLibrary.bib --filter pandoc-citeproc --csl apa-cv.csl inequality_perception_issp.md -o inequality_perception_issp.html</code></pre></li>
-</ul>
+---
+````
+
+  - con esto, luego el MPP muestra las citas (en el preview)
+
+
+  - Convertir: el paquete pandoc-convert (hasta ahora) no convierte las citas, solo el texto. Lo que funciona es vía linea de comando, abriendo terminal desde atom y:</code></pre>
+<pre><code>pandoc -s -S --bibliography MyLibrary.bib --filter pandoc-citeproc --csl apa-cv.csl inequality_perception_issp.md -o inequality_perception_issp.html</code></pre>
 
 </div>
 </div>
+<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-<a href="documentos-reproducibles.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="control-de-versiones.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="rmarkdown-knitr.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="protocolo-de-proyecto-reproducible.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -386,12 +396,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -399,14 +408,18 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-citandoplano.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-lenguaje.Rmd",
 "text": "Edit"
 },
 "history": {
 "link": null,
 "text": null
 },
-"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"view": {
+"link": null,
+"text": null
+},
+"download": ["inv-soc-abi.pdf", "inv-soc-abi.epub"],
 "toc": {
 "collapse": "subsection"
 }

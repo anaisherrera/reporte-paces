@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Investigación Social Abierta</title>
+  <title>1.4 Rmarkdown / Knitr | Investigación Social Abierta</title>
   <meta name="description" content="Libro Investigación Social Abierta" />
   <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Investigación Social Abierta" />
+  <meta property="og:title" content="1.4 Rmarkdown / Knitr | Investigación Social Abierta" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Investigación Social Abierta" />
+  <meta name="twitter:title" content="1.4 Rmarkdown / Knitr | Investigación Social Abierta" />
   
   <meta name="twitter:description" content="Libro Investigación Social Abierta" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="introducción.html"/>
+<link rel="prev" href="documentos-dinámicos-con-rmarkdown.html"/>
+<link rel="next" href="citando-plano.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -180,55 +180,81 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Investigación Social Abierta</h1>
-<h2 class="subtitle"><em>Herramientas para la reproducibilidad, colaboración y comunicación académica</em></h2>
-<p class="author"><em>Juan Carlos Castillo</em></p>
-<p class="date"><em>2020-05-19</em></p>
+<div id="rmarkdown-knitr" class="section level2">
+<h2><span class="header-section-number">1.4</span> Rmarkdown / Knitr</h2>
+<p>Excelente referencia: <a href="https://rmd4sci.njtierney.com/">RMardown for scientists</a></p>
+<p>Rmarkdown es una versión de Markdown pero con algunas características especiales. La principal de ellas es que, además de la escritura en Markdown, permite incorporar código y resultados de R en un mismo documento, a través de la librería <code>knitr</code> (en español tejer).</p>
+<p>Knitr es una librería de R que convierte (compila) documentos escritos en Rmarkdown y que combinan texto y análisis hacia otros formatos. Esto es posible ya que reconoce marcas de edición y código de análisis y permite su transformación a formatos como pdf, word y html. Una representación del flujo según Healey es la siguiente:</p>
+<p><img src="images/healeysworkflow.png" /></p>
+<p>El documento central de trabajo es uno en formato .Rmd (Rmarkdown), que combina texto en Markdown y código R, lo que se detalla más abajo. La librería <code>Knitr</code> hace la transformación de este documento a formatos como html y/o pdf, para lo cual utiliza el convertidor pandoc.</p>
+<p>No es necesario conocer al detalle todos los elementos de este flujo para hacer funcionar un documento dinámico, sino básicamente dos: 1) Markdown, y 2) Trozos de código. Vamos por parte.</p>
+<div id="trozos-chunks-de-código" class="section level3">
+<h3><span class="header-section-number">1.4.1</span> Trozos (chunks) de código</h3>
+<p>La caracteristica principal de <code>Knitr</code> es que identifica las secciones de código en la hoja y los ejecuta mediante R. Estos trozos de código se encuentran delimitados de la siguiente manera:</p>
+<pre><code>```{r}
+    4+5
+```</code></pre>
+<p>Es decir, todo lo que comience por <code>```r</code> y termine con <code>```</code> será identificado como código de análisis (el atajo para generar un chunk en RStudio es <code>ctrl+alt+i</code>)</p>
 </div>
-<div id="presentación" class="section level1 unnumbered">
-<h1>Presentación</h1>
-<p>En Enero del 2012 un grupo de investigadores lanza un boycott a la editorial Elsevier, uno de los grandes consorcios que administran revistas de divulgación científica. Tal como se establece en el sitio <a href="http://www.thecostofknowledge.com/">“The cost of knowledge”</a>, la principal razón para este boycott son los altos precios de subscripción a las revistas, que las universidades y el público general deben pagar a pesar de que gran parte de la investigación ha sido financiada por fondos públicos. También en el año 2012 el profesor de psicología social Diederik Stapel, de la Universidad de Tilburg, fue encontrado culpable de fraude académico. Algunos de sus asistentes de investigación descubrieron que falseaba los datos para llegar a resultados impactantes y dignos de publicación en las mejores revistas científicas. Al menos 55 de sus artículos contenían datos fraudulentos. Stapel, destituido de su cargo, asumió que la presión por publicar en revistas de alto impacto lo había llevado demasiado lejos.</p>
-<p>Tanto el boycott a Elsevier como el caso del profesor Stapel tienen en común la forma en que se aborda la producción científica. En el caso de Elsevier tiene que ver con el acceso al conocimiento, que actualmente se encuentra encerrado tras barreras de pago, mientras en el caso de Stapel tiene que ver con las prácticas de investigación. Stapel logró evitar compartir sus datos y análisis por mucho tiempo, dado que no existía ningún tipo de orientación ni regla que permitiera que la generación de conocimiento fuera abierta a la comunidad científica y al público en general. En otras palabras, su investigación no era realizada de una manera que permitiera la reproducibilidad de sus hallazgos por parte de otr_s investigadores.</p>
-<p>Sin duda el cierre científico tanto en acceso como en reproduciblidad conlleva aspectos éticos, y en algunos casos incluso legales. Pero además de los aspectos éticos, también existe una dimensión de eficiencia. La apertura del conocimiento permite hacer mejor ciencia en tanto evita tener que estar “reinventando la rueda”, lo que muchas veces sucede en la academia ya que no tenemos acceso libre a productos de investigación ni tampoco a los procesos que llevaron a esos productos.</p>
-<p>Este libro está orientado más bien por la perspectiva de la eficiencia. Sin desconocer los aspectos éticos de el cierre científico, el argumento central es que la apertura de la ciencia pasa en gran medida por prácticas cotidianas del quehacer científico: escritura, análisis de datos, colaboración, publicación. Sin un cambio en la manera concreta en que se hace ciencia, todo el discurso moral en contra del cierre científico queda en el vacío. Por lo tanto, el libro está orientado a describir herramientas prácticas de investigación reproducible que pueden ser de utilidad para quienes estén interesados en incorporar la perspectiva de ciencia abierta en su propia investigación. Si bien el publico objetivo principal son investigadores en ciencias sociales, también puede ser de utilidad a otras disciplinas que trabajan analizando datos.</p>
-<p>Estructural del libro:</p>
-<p><strong>A. Lenguaje reproducible</strong></p>
+<div id="tipos-de-chunks" class="section level3">
+<h3><span class="header-section-number">1.4.2</span> Tipos de chunks</h3>
+<p>En general hay cinco opciones básicas de edición relacionadas con chunks y su visualización en el documento final. Esto se maneja mediante opciones que aparecen al inicio en el chunk, luego de la letra <code>r</code></p>
 <ol style="list-style-type: decimal">
-<li>Introducción: simpleza y propiedad</li>
-<li>Markdown</li>
-<li>Rmarkdown / Knitr</li>
-<li>Citando plano</li>
+<li>código y resultado (opción por defecto)</li>
 </ol>
-<p><strong>B. Documentación del proceso de investigación: protocolo IPO</strong></p>
-<ol start="5" style="list-style-type: decimal">
-<li>Estructura protocolo IPO</li>
-<li>Flujo protocolo IPO</li>
+<pre><code>```{r}
+1 + 1
+```</code></pre>
+<p>Resulta</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" title="1"><span class="dv">1</span> <span class="op">+</span><span class="st"> </span><span class="dv">1</span></a></code></pre></div>
+<pre><code>## [1] 2</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>solo código, ocultando resultados:</li>
 </ol>
-<p><strong>C. Control de versiones y colaboración</strong></p>
-<ol start="7" style="list-style-type: decimal">
-<li>Control de versiones con git</li>
-<li>Colaboración con Github</li>
+<pre><code>```{r, results=&#39;hide&#39;}
+1 + 1
+```</code></pre>
+<p>Resulta:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" title="1"><span class="dv">1</span> <span class="op">+</span><span class="st"> </span><span class="dv">1</span></a></code></pre></div>
+<ol start="3" style="list-style-type: decimal">
+<li>solo resultado</li>
 </ol>
-<p><strong>D. Publicación abierta</strong></p>
-<ol start="9" style="list-style-type: decimal">
-<li>Plataformas: Open Science Framework &amp; SocArxiv</li>
-<li>Pre-registros</li>
-<li>Publicación web vía Rmarkdown, blogdown &amp; bookdown_site</li>
-<li>Preprints &amp; Postprints &amp; Acceso Abierto</li>
-<li>Presentaciones en texto plano: Xaringan</li>
+<pre><code>```{r, echo=FALSE}
+1 + 1
+```</code></pre>
+<p>Resulta:</p>
+<pre><code>## [1] 2</code></pre>
+<ol start="4" style="list-style-type: decimal">
+<li>ni código ni resultado <code>{r echo=FALSE results='hide'}</code></li>
+<li>resultado “tal cual como es”: <code>{r results='asis'}</code> se utiliza principalmente para comandos de generación de tablas, que arrojan un código que luego puede ser interpretado por otro lenguaje (por ejemplo, html)</li>
 </ol>
-<p><strong>Apéndice: Implementación en Atom</strong></p>
-<p>Referencias</p>
-
+</div>
+<div id="trabajando-con-documentos-dinámicos-en-rstudio" class="section level3">
+<h3><span class="header-section-number">1.4.3</span> Trabajando con documentos dinámicos en RStudio</h3>
+<p>RStudio es principalmente un editor para análisis de datos con R, pero últimamente ha ido incorporando herramientas para reportes dinámicos. Para ello utiliza un tipo de archivos con extensión <code>Rmd</code> que significa Rmarkdown. Y en este contexto Rmarkdown es la forma en que Rstudio identifica los archivos que combinan texto y código.</p>
+<p>Para generar un archivo Rmarkdown, simplemente new file &gt; Rmarkdown</p>
+<p><img src="images/rmarkdown.gif" /></p>
+<p>Y luego para convertir este documento, presionar el boton <code>Knitr</code>.</p>
+<p>El generador de documentos por defecto trae un texto de ejemplo donde hay analisis y tablas, y además dos cosas:</p>
+<ul>
+<li><p><strong>Preámbulo o YAML (Yet Another Markdown Language)</strong>: esta sección del inicio que se encuentra enmarcada entre <code>---</code> incluye algunos datos básicos del documento que luego se consideran al momento de convertirlo al documento editado final. Por ejemplo, si se prefiere que la conversión sea a html, se incluye la opción <code>output: html_document</code></p>
+<pre><code>---
+title: &quot;nuevo&quot;
+author: &quot;jc&quot;
+date: &quot;5/30/2019&quot;
+output: html_document
+---</code></pre></li>
+<li><p><strong>Chunk de opciones generales</strong>: va al inicio del documento, luego del YAML. En general, la que aparece por defecto <code>echo=TRUE</code> se refiere a que se muestren los resultados de los chunks de código.</p></li>
+</ul>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="introducción.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="documentos-dinámicos-con-rmarkdown.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="citando-plano.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -259,7 +285,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/index.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-lenguaje.Rmd",
 "text": "Edit"
 },
 "history": {

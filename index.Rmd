@@ -17,46 +17,45 @@ github-repo:
 description: "Libro Investigación Social Abierta"
 ---
 
+
 # Presentación {-}
 
-Este es un libro orientado a describir herramientas de investigación reproducible enfocado a un público del ámbito de las ciencias sociales. Está inspirado sin duda por la noción de ciencia abierta, pero consiste básicamente en una guía práctica de software de escritura, comunicación y colaboración. El argumento básico es que el hacer ciencia abierta pasa por la reproducibilidad de nuestras investigaciones, y esto nos lleva a privilegiar el trabajo en texto plano.
+En Enero del 2012 un grupo de investigadores lanza un boycott a la editorial Elsevier, uno de los grandes consorcios que administran revistas de divulgación científica. Tal como se establece en el sitio ["The cost of knowledge"](http://www.thecostofknowledge.com/), la principal razón para este boycott son los altos precios de subscripción a las revistas, que las universidades y el público general deben pagar a pesar de que gran parte de la investigación ha sido financiada por fondos públicos. También en el año 2012 el profesor de psicología social Diederik Stapel, de la Universidad de Tilburg, fue encontrado culpable de fraude académico. Algunos de sus asistentes de investigación descubrieron que falseaba los datos para llegar a resultados impactantes y dignos de publicación en las mejores revistas científicas. Al menos 55 de sus artículos contenían datos fraudulentos. Stapel, destituido de su cargo, asumió que la presión por publicar en revistas de alto impacto lo había llevado demasiado lejos.
 
+Tanto el boycott a Elsevier como el caso del profesor Stapel tienen en común la forma en que se aborda la producción científica. En el caso de Elsevier tiene que ver con el acceso al conocimiento, que actualmente se encuentra encerrado tras barreras de pago, mientras en el caso de Stapel tiene que ver con las prácticas de investigación. Stapel logró evitar compartir sus datos y análisis por mucho tiempo, dado que no existía ningún tipo de orientación ni regla que permitiera que la generación de conocimiento fuera abierta a la comunidad científica y al público en general. En otras palabras, su investigación no era realizada de una manera que permitiera la reproducibilidad de sus hallazgos por parte de otr_s investigadores.
 
-Capítulos a desarrollar:
+Sin duda el cierre científico tanto en acceso como en reproduciblidad conlleva aspectos éticos, y en algunos casos incluso legales. Pero además de los aspectos éticos, también existe una dimensión de eficiencia. La apertura del conocimiento permite hacer mejor ciencia en tanto evita tener que estar "reinventando la rueda", lo que muchas veces sucede en la academia ya que no tenemos acceso libre a productos de investigación ni tampoco a los procesos que llevaron a esos productos.
 
+Este libro está orientado más bien por la perspectiva de la eficiencia. Sin desconocer los aspectos éticos de el cierre científico, el argumento central es que la apertura de la ciencia pasa en gran medida por prácticas cotidianas del quehacer científico: escritura, análisis de datos, colaboración, publicación. Sin un cambio en la manera concreta en que se hace ciencia, todo el discurso moral en contra del cierre científico queda en el vacío. Por lo tanto, el libro está orientado a describir herramientas prácticas de investigación reproducible que pueden ser de utilidad para quienes estén interesados en incorporar la perspectiva de ciencia abierta en su propia investigación. Si bien el publico objetivo principal son investigadores en ciencias sociales, también puede ser de utilidad a otras disciplinas que trabajan analizando datos.
 
-**I. Preparando la investigación**
+Estructural del libro:
 
-1. Prerregistros
-2. Reportes registrados
-3. Documentación de datos
+**A. Lenguaje reproducible**
 
-**II. Desarrollando la investigación**
+1. Introducción: simpleza y propiedad
+2. Markdown
+3. Rmarkdown / Knitr
+4. Citando plano
 
-1. Reproducibilidad
-  - Organización: carpetas y path relativos
-  - Orden de código
-  - Colaboración en Github: forks, pull requests, issues y projects
-  - Citando plano: Bibtex & Zotero
+**B. Documentación del proceso de investigación: protocolo IPO**
 
-2. Control de versiones
+5. Estructura protocolo IPO
+6. Flujo protocolo IPO
 
-**III. Comunicar la investigación**
+**C. Control de versiones y colaboración**
 
-1. Documentos reproducibles
-  - Markdown / Rmarkdown
-  - Tejiendo escritura y análisis: Knitr
-  - Pandoc, plantillas y salidas
-  - Documentos con parámetros
+7. Control de versiones con git
+8. Colaboración con Github
 
-2. Publicación de resultados
-  - Publicación web vía Rmarkdown, blogdown & bookdown
-  - Preprints, Postprints & Acceso Abierto
-  - Presentando: Xaringan
-  - Open Science Framework & SocArxiv
-  - Repositorios (Dataverse)
+**D. Publicación abierta**
 
-Apéndice: Implementación de Flujo X en Atom
+9. Plataformas: Open Science Framework & SocArxiv
+10. Pre-registros
+11. Publicación web vía Rmarkdown, blogdown & bookdown_site
+12. Preprints & Postprints & Acceso Abierto
+13. Presentaciones en texto plano: Xaringan
+
+**Apéndice: Implementación en Atom**
 
 Referencias
 

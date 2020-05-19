@@ -1,4 +1,4 @@
-# Flujos y protocolos reproducibles
+# Protocolo de proyecto reproducible
 
 ## Protocolos de estructura de carpetas reproducibles
 
@@ -24,3 +24,7 @@ Además del código por supuesto se requieren los datos, y en un nivel aún mejo
 La estructura se resume en el siguiente esquema:
 
 ![](https://bucketeer-82911c16-8ccd-4854-b255-5b3ebba24d7c.s3.amazonaws.com/images/TIER-folder-illustration-v3.0.width-800.png?Signature=aOshHp5a2jP%2Bqe8ZXttwsE6UNno%3D&Expires=1574874886&AWSAccessKeyId=AKIAII43OBBLSEWFDW2A)
+
+
+
+(Aquí IPO)

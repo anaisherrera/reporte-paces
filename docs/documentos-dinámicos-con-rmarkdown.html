@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Investigación Social Abierta</title>
+  <title>1.3 Documentos dinámicos con RMarkdown | Investigación Social Abierta</title>
   <meta name="description" content="Libro Investigación Social Abierta" />
   <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Investigación Social Abierta" />
+  <meta property="og:title" content="1.3 Documentos dinámicos con RMarkdown | Investigación Social Abierta" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Investigación Social Abierta" />
+  <meta name="twitter:title" content="1.3 Documentos dinámicos con RMarkdown | Investigación Social Abierta" />
   
   <meta name="twitter:description" content="Libro Investigación Social Abierta" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="introducción.html"/>
+<link rel="prev" href="markdown.html"/>
+<link rel="next" href="rmarkdown-knitr.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -180,55 +180,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Investigación Social Abierta</h1>
-<h2 class="subtitle"><em>Herramientas para la reproducibilidad, colaboración y comunicación académica</em></h2>
-<p class="author"><em>Juan Carlos Castillo</em></p>
-<p class="date"><em>2020-05-19</em></p>
-</div>
-<div id="presentación" class="section level1 unnumbered">
-<h1>Presentación</h1>
-<p>En Enero del 2012 un grupo de investigadores lanza un boycott a la editorial Elsevier, uno de los grandes consorcios que administran revistas de divulgación científica. Tal como se establece en el sitio <a href="http://www.thecostofknowledge.com/">“The cost of knowledge”</a>, la principal razón para este boycott son los altos precios de subscripción a las revistas, que las universidades y el público general deben pagar a pesar de que gran parte de la investigación ha sido financiada por fondos públicos. También en el año 2012 el profesor de psicología social Diederik Stapel, de la Universidad de Tilburg, fue encontrado culpable de fraude académico. Algunos de sus asistentes de investigación descubrieron que falseaba los datos para llegar a resultados impactantes y dignos de publicación en las mejores revistas científicas. Al menos 55 de sus artículos contenían datos fraudulentos. Stapel, destituido de su cargo, asumió que la presión por publicar en revistas de alto impacto lo había llevado demasiado lejos.</p>
-<p>Tanto el boycott a Elsevier como el caso del profesor Stapel tienen en común la forma en que se aborda la producción científica. En el caso de Elsevier tiene que ver con el acceso al conocimiento, que actualmente se encuentra encerrado tras barreras de pago, mientras en el caso de Stapel tiene que ver con las prácticas de investigación. Stapel logró evitar compartir sus datos y análisis por mucho tiempo, dado que no existía ningún tipo de orientación ni regla que permitiera que la generación de conocimiento fuera abierta a la comunidad científica y al público en general. En otras palabras, su investigación no era realizada de una manera que permitiera la reproducibilidad de sus hallazgos por parte de otr_s investigadores.</p>
-<p>Sin duda el cierre científico tanto en acceso como en reproduciblidad conlleva aspectos éticos, y en algunos casos incluso legales. Pero además de los aspectos éticos, también existe una dimensión de eficiencia. La apertura del conocimiento permite hacer mejor ciencia en tanto evita tener que estar “reinventando la rueda”, lo que muchas veces sucede en la academia ya que no tenemos acceso libre a productos de investigación ni tampoco a los procesos que llevaron a esos productos.</p>
-<p>Este libro está orientado más bien por la perspectiva de la eficiencia. Sin desconocer los aspectos éticos de el cierre científico, el argumento central es que la apertura de la ciencia pasa en gran medida por prácticas cotidianas del quehacer científico: escritura, análisis de datos, colaboración, publicación. Sin un cambio en la manera concreta en que se hace ciencia, todo el discurso moral en contra del cierre científico queda en el vacío. Por lo tanto, el libro está orientado a describir herramientas prácticas de investigación reproducible que pueden ser de utilidad para quienes estén interesados en incorporar la perspectiva de ciencia abierta en su propia investigación. Si bien el publico objetivo principal son investigadores en ciencias sociales, también puede ser de utilidad a otras disciplinas que trabajan analizando datos.</p>
-<p>Estructural del libro:</p>
-<p><strong>A. Lenguaje reproducible</strong></p>
-<ol style="list-style-type: decimal">
-<li>Introducción: simpleza y propiedad</li>
-<li>Markdown</li>
-<li>Rmarkdown / Knitr</li>
-<li>Citando plano</li>
-</ol>
-<p><strong>B. Documentación del proceso de investigación: protocolo IPO</strong></p>
-<ol start="5" style="list-style-type: decimal">
-<li>Estructura protocolo IPO</li>
-<li>Flujo protocolo IPO</li>
-</ol>
-<p><strong>C. Control de versiones y colaboración</strong></p>
-<ol start="7" style="list-style-type: decimal">
-<li>Control de versiones con git</li>
-<li>Colaboración con Github</li>
-</ol>
-<p><strong>D. Publicación abierta</strong></p>
-<ol start="9" style="list-style-type: decimal">
-<li>Plataformas: Open Science Framework &amp; SocArxiv</li>
-<li>Pre-registros</li>
-<li>Publicación web vía Rmarkdown, blogdown &amp; bookdown_site</li>
-<li>Preprints &amp; Postprints &amp; Acceso Abierto</li>
-<li>Presentaciones en texto plano: Xaringan</li>
-</ol>
-<p><strong>Apéndice: Implementación en Atom</strong></p>
-<p>Referencias</p>
-
+<div id="documentos-dinámicos-con-rmarkdown" class="section level2">
+<h2><span class="header-section-number">1.3</span> Documentos dinámicos con RMarkdown</h2>
+<p>En la investigación académica en general el proceso de escritura se encuentra separado del análisis, en programas y documentos distintos. El traspaso de información entre el programa de análisis y el programa de edición de texto se realiza con un clásico: cortar y pegar.</p>
+<p><em>¿Cuáles son las desventajas de cortar y pegar?</em></p>
+<ul>
+<li><p>La principal es el límite a la reproducibilidad. ¿Cómo identificar los análisis que finalmente son reportados?</p></li>
+<li><p>Eficiencia: cada vez que se realicen cambios en los análisis, nuevamente implica cortar-pegar, y es difícil llevar un registro apropiado de las versiones de los documentos.</p></li>
+</ul>
+<p>Los <strong>documentos dinámicos</strong> permiten lidiar con las limitaciones anteriores, ya que los análisis y resultados están en un mismo documento. Esto es posible ya que se combinan dos lenguajes en texto plano: escritura y código de análisis. La clave es que el programa de edición y de análisis pueda identificar qué secciones del texto corresponden a escritura y cuáles corresponden a análisis.</p>
+<p><em>¿Por qué escribir en texto plano en lugar de un programa que me muestre inmediatamente el texto y su formato (tipo Word)?</em>
+Hay múltiples razones, solo resalto dos:</p>
+<p>1 - <strong>Propiedad</strong>: los contenidos guardados en formatos de procesadores comerciales (como Word) dependen del pago de una licencia para poder leerse. Si el software es imposible leerlos, por lo tanto la propiedad de los contenidos guardados en ese formato no son del autor/a, sino de la empresa de software. El texto plano no depende de un software comercial para poder leerse ni modificarse.</p>
+<p>2 - <strong>Flexibilidad en incorporación de texto y análisis</strong>: el escribir en texto plano permite incluir en un mismo documento elementos de escritura y de análisis de datos realizado en texto plano, por lo tanto no se requiere cortar ni pegar en otro documento.</p>
+<p>Actualmente existen una serie de herramientas que facilitan la elaboración de documentos dinámicos, en particular basados en la librería <code>knitr</code> (tejer). Esta librería permite generar documentos escritos en lenguaje Markdown y análisis realizado en R.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="introducción.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="markdown.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="rmarkdown-knitr.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -259,7 +232,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/index.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-lenguaje.Rmd",
 "text": "Edit"
 },
 "history": {

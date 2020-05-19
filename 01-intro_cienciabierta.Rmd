@@ -1,6 +1,26 @@
 # Introducción {-}
 
-¿Es la ciencia una actividad cerrada? El uso de la palabra _abierta_ junto a _ciencia_ tiene sin duda un sentido crítico hacia formas de hacer ciencia que se caracterizan por las restricciones y el cierre. Parte importante de esta crítica tiene que ver con el difícil acceso a los resultados de investigaciones científicas, por barreras tanto comunicacionales como también económicas. El concepto de "barreras de pago" (paywall), una de las principales críticas a la ciencia actual, justamente consiste en que se debe pagar para poder acceder al conocimiento que en gran parte ha sido financiado por fondos públicos. Cuando el acceso al conocimiento está mediado por el tamaño de la billetera, sin duda surgen una serie de cuestionamientos sobre si esta forma de hacer y divulgar ciencia es la correcta.
+**Crisis de acceso y de transparencia en el quehacer científico**
+
+¿Es la ciencia una actividad cerrada? Si es así, ¿Es un problema?¿Se puede avanzar en su solución?
+
+El uso de la palabra _abierta_ junto a _ciencia_ tiene sin duda un sentido crítico hacia formas de hacer ciencia que se caracterizan por las restricciones y el cierre. Parte importante de esta crítica tiene que ver con el difícil **acceso a los resultados** de investigaciones científicas, por barreras tanto comunicacionales como también económicas. El concepto de **barreras de pago** (paywall), una de las principales críticas a la ciencia actual, justamente consiste en que se debe pagar para poder acceder al resultado de investigaciones (en la forma típica de "el paper").
+
+_Veamos un ejemplo_: intentemos acceder a la publicación de los resultados de una investigación que fue financiada por fondos públicos (FONDECYT):[https://doi.org/10.1016/j.ssresearch.2015.02.003](https://doi.org/10.1016/j.ssresearch.2015.02.003)
+
+![](images/access.gif)
+
+Este es un artículo publicado en una revista perteneciente al consorcio editorial Elsevier. A menos que se acceda desde una red que ha pagado una suscripción institucional para esta revista (por ejemplo, una Universidad), lo que va a aparecer es lo que muestra la imagen: para acceder al conocimiento hay que pagar. Parece difícil de entender, pero la publicación académica en revistas de alto impacto se ha entrampado en este flujo: los investigadores envían sus artículos a revistas (que en ocasiones también cobran por la revisión), en el caso de ser publicado ceden sus derechos a la editorial, y la editorial luego vende los derechos a la universidad en forma de suscripciones anuales, y al público general en forma de pago por el acceso a cada artículo.
+
+En este punto se podría intentar justificar este modelo de negocio editorial pensando que todo el proceso de edición ciertamente no es gratis. Pero la discusión es sobre cuánto cuesta realmente y quién debe financiarlo. Por ejemplo, [el margen de ganancias de Elsevier el año 2018 fue de 37%](https://www.thebookseller.com/news/elsevier-records-2-lifts-revenue-and-profits-960016), siendo un negocio claramente lucrativo basado en barreras de acceso al conocimiento.
+
+¿Qué consecuencias posee el cierre del acceso al conocimiento? Se pueden destacar dos:
+
+- el público general no tiene fácil acceso a resultados de investigaciones financiadas por sus propios impuestos
+
+- Las y los investigadores que no pueden acceder a resultados previos no cuentan con los antecedentes óptimos para desarrollar sus estudios. Se aumenta el riesgo de reinventar la rueda y el consiguiente despilfarro de recursos públicos valiosos
+
+Por lo tanto, un primer aspecto crítico del quehacer científico actual tiene que ver con el cierre del acceso a resultados de investigación por barreras de pago. Un segundo aspecto crítico es anterior a los resultados y tiene que ver con el **proceso de investigación**
 
 ...
 
