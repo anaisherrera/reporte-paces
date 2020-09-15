@@ -1,7 +1,6 @@
 ---
-title: "Investigación Social Abierta"
-subtitle: "Herramientas para la reproducibilidad, colaboración y comunicación académica"
-author: "Juan Carlos Castillo"
+title: "Panel Ciudadanía Escolar"
+subtitle: "Reporte de resultados 2019"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -13,51 +12,41 @@ monofontoptions: "Scale=0.8"
 bibliography: [book.bib, packages.bib, openscience.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo:
-description: "Libro Investigación Social Abierta"
 ---
 
+# Presentación del estudio{-}
+<div align="justify";>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa placerat duis ultricies lacus sed. At augue eget arcu dictum varius duis. Platea dictumst quisque sagittis purus sit amet volutpat consequat. Sit amet aliquam id diam maecenas. Urna et pharetra pharetra massa massa. Viverra maecenas accumsan lacus vel facilisis volutpat est. Pretium quam vulputate dignissim suspendisse in est. Nibh nisl condimentum id venenatis a condimentum. Felis eget nunc lobortis mattis aliquam faucibus purus in. Nulla malesuada pellentesque elit eget. Ut placerat orci nulla pellentesque dignissim enim sit. <br>
 
-# Presentación {-}
+Malesuada fames ac turpis egestas integer eget aliquet nibh. Mi bibendum neque egestas congue quisque. Interdum consectetur libero id faucibus nisl. Porta nibh venenatis cras sed felis eget. Euismod lacinia at quis risus sed vulputate odio ut. Massa sed elementum tempus egestas sed sed risus pretium. At imperdiet dui accumsan sit amet nulla facilisi. Nisl tincidunt eget nullam non nisi est sit amet. Arcu bibendum at varius vel. Mattis aliquam faucibus purus in. Consequat id porta nibh venenatis cras sed felis eget. Laoreet non curabitur gravida arcu ac. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum.<br>
 
-En Enero del 2012 un grupo de investigadores lanza un boycott a la editorial Elsevier, uno de los grandes consorcios que administran revistas de divulgación científica. Tal como se establece en el sitio ["The cost of knowledge"](http://www.thecostofknowledge.com/), la principal razón para este boycott son los altos precios de subscripción a las revistas, que las universidades y el público general deben pagar a pesar de que gran parte de la investigación ha sido financiada por fondos públicos. También en el año 2012 el profesor de psicología social Diederik Stapel, de la Universidad de Tilburg, fue encontrado culpable de fraude académico. Algunos de sus asistentes de investigación descubrieron que falseaba los datos para llegar a resultados impactantes y dignos de publicación en las mejores revistas científicas. Al menos 55 de sus artículos contenían datos fraudulentos. Stapel, destituido de su cargo, asumió que la presión por publicar en revistas de alto impacto lo había llevado demasiado lejos.
+Amet mattis vulputate enim nulla. Elementum nibh tellus molestie nunc non blandit massa enim nec. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Viverra justo nec ultrices dui sapien eget mi proin sed. At erat pellentesque adipiscing commodo. Est ullamcorper eget nulla facilisi etiam dignissim diam quis. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Aliquam sem fringilla ut morbi tincidunt. Duis ultricies lacus sed turpis tincidunt id. Phasellus vestibulum lorem sed risus ultricies tristique. Odio eu feugiat pretium nibh ipsum. Diam volutpat commodo sed egestas egestas.<br>
 
-Tanto el boycott a Elsevier como el caso del profesor Stapel tienen en común la forma en que se aborda la producción científica. En el caso de Elsevier tiene que ver con el acceso al conocimiento, que actualmente se encuentra encerrado tras barreras de pago, mientras en el caso de Stapel tiene que ver con las prácticas de investigación. Stapel logró evitar compartir sus datos y análisis por mucho tiempo, dado que no existía ningún tipo de orientación ni regla que permitiera que la generación de conocimiento fuera abierta a la comunidad científica y al público en general. En otras palabras, su investigación no era realizada de una manera que permitiera la reproducibilidad de sus hallazgos por parte de otr_s investigadores.
+Pharetra diam sit amet nisl. Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. Convallis posuere morbi leo urna molestie at. Tristique magna sit amet purus gravida. Lacus sed turpis tincidunt id aliquet risus. Eget mi proin sed libero enim. Gravida rutrum quisque non tellus orci ac. Turpis nunc eget lorem dolor sed viverra ipsum. Amet aliquam id diam maecenas ultricies mi. Ornare arcu odio ut sem. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Id donec ultrices tincidunt arcu non sodales. Eget nunc lobortis mattis aliquam faucibus purus in massa. Mattis vulputate enim nulla aliquet porttitor lacus. Ut eu sem integer vitae justo eget magna fermentum iaculis. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc. Ullamcorper sit amet risus nullam. Dolor sit amet consectetur adipiscing elit. Cursus eget nunc scelerisque viverra mauris in aliquam.<br><br>
+</div>
 
-Sin duda el cierre científico tanto en acceso como en reproduciblidad conlleva aspectos éticos, y en algunos casos incluso legales. Pero además de los aspectos éticos, también existe una dimensión de eficiencia. La apertura del conocimiento permite hacer mejor ciencia en tanto evita tener que estar "reinventando la rueda", lo que muchas veces sucede en la academia ya que no tenemos acceso libre a productos de investigación ni tampoco a los procesos que llevaron a esos productos.
+Estructura del reporte:
 
-Este libro está orientado más bien por la perspectiva de la eficiencia. Sin desconocer los aspectos éticos de el cierre científico, el argumento central es que la apertura de la ciencia pasa en gran medida por prácticas cotidianas del quehacer científico: escritura, análisis de datos, colaboración, publicación. Sin un cambio en la manera concreta en que se hace ciencia, todo el discurso moral en contra del cierre científico queda en el vacío. Por lo tanto, el libro está orientado a describir herramientas prácticas de investigación reproducible que pueden ser de utilidad para quienes estén interesados en incorporar la perspectiva de ciencia abierta en su propia investigación. Si bien el publico objetivo principal son investigadores en ciencias sociales, también puede ser de utilidad a otras disciplinas que trabajan analizando datos.
+**Módulo 1: Conocimiento y formación en la escuela**
 
-Estructural del libro:
+1. Conocimiento cívico
+    a) Resultados generales
+    b) Comparación con el estudio ICCS 2009
+2. Clima democrático en el aula
+    a) Importancia de distintos aspectos en la formación ciudadana
+    b) Quién juega el rol más importante en distintos aspectos de la formación ciudadana
 
-**A. Lenguaje reproducible**
+**Módulo 2: Actitudes políticas**
 
-1. Introducción: simpleza y propiedad
-2. Markdown
-3. Rmarkdown / Knitr
-4. Citando plano
+3. Interés en la política y en los problemas sociales
+4. Satisfacción con la democracia y actitudes autoritarias
+5. Confianza en grupos e instituciones
 
-**B. Documentación del proceso de investigación: protocolo IPO**
+**Módulo 3: Participación**
 
-5. Estructura protocolo IPO
-6. Flujo protocolo IPO
-
-**C. Control de versiones y colaboración**
-
-7. Control de versiones con git
-8. Colaboración con Github
-
-**D. Publicación abierta**
-
-9. Plataformas: Open Science Framework & SocArxiv
-10. Pre-registros
-11. Publicación web vía Rmarkdown, blogdown & bookdown_site
-12. Preprints & Postprints & Acceso Abierto
-13. Presentaciones en texto plano: Xaringan
-
-**Apéndice: Implementación en Atom**
-
-Referencias
+6. Participación formal
+7. Participación activista
+8. Participación comunitaria
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
