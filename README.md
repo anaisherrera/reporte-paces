@@ -1,3 +1,3 @@
-## [Sitio del libro Investigación Social Abierta](https://juancarloscastillo.github.io/in-socabi/)
+## [Sitio del Estudio Panel Ciudadanía Escolar 2019](https://github.com/anaisherrera/reporte-paces/docs/index.html)
 
 - generado via R bookdown
