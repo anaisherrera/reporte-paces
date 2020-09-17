@@ -1,7 +1,0 @@
-# Control de versiones
-
-## ¿Qué es Git?
-
-## Instalación
-
-## Funcionamiento

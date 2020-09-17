@@ -1,6 +1,6 @@
 book_filename: "inv-soc-abi"
 language:
   ui:
-    chapter_name: "Capitulo "
+    chapter_name: "Modulo "
 delete_merged_file: true
 output_dir: "docs"

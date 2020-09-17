@@ -5,7 +5,7 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
-fontsize: 11pt
+fontsize: 14pt
 mainfont: Palatino
 monofont: "Source Code Pro"
 monofontoptions: "Scale=0.8"
@@ -29,24 +29,28 @@ Estructura del reporte:
 
 **Módulo 1: Conocimiento y formación en la escuela**
 
-1. Conocimiento cívico
-    a) Resultados generales
-    b) Comparación con el estudio ICCS 2009
-2. Clima democrático en el aula
-    a) Importancia de distintos aspectos en la formación ciudadana
-    b) Quién juega el rol más importante en distintos aspectos de la formación ciudadana
+Sección 1: Conocimiento cívico<br>
+<ul>
+  <li>Resultados generales</li>
+  <li>Comparación con el estudio ICCS 2009</li>
+</ul>
+Sección 2: Clima democrático en el aula<br>
+<ul>
+  <li>Importancia de distintos aspectos en la formación ciudadana</li>
+  <li>Quién juega el rol más importante en distintos aspectos de la formación ciudadana</li>
+</ul>
 
 **Módulo 2: Actitudes políticas**
 
-3. Interés en la política y en los problemas sociales
-4. Satisfacción con la democracia y actitudes autoritarias
-5. Confianza en grupos e instituciones
+Sección 1: Interés en la política y en los problemas sociales<br>
+Sección 2: Satisfacción con la democracia y actitudes autoritarias<br>
+Sección 3: Confianza en grupos e instituciones<br>
 
 **Módulo 3: Participación**
 
-6. Participación formal
-7. Participación activista
-8. Participación comunitaria
+Sección 1: Participación formal<br>
+Sección 2: Participación activista<br>
+Sección 3: Participación comunitaria<br>
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
