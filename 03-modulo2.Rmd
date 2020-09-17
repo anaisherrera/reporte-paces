@@ -1,3 +1,6 @@
+---
+title: "Panel Ciudadanía Escolar"
+---
 # Actitudes políticas
 <div align="justify";>
 En este módulo se presentan las respuestas de los docentes, estudiantes y apoderados a una serie de preguntas sobre temas políticos y sociales. El análisis se realizará comparando las respuestas de los grupos. Cabe precisar que algunas de las preguntas fueron realizadas solo a los estudiantes y apoderados.

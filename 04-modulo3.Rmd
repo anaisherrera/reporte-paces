@@ -1,3 +1,6 @@
+---
+title: "Panel Ciudadanía Escolar"
+---
 # Participación
 <div align="justify";>
 En este módulo se presentan las respuestas de los estudiantes a una serie de preguntas sobre su participación en distintas actividades al interior de la escuela y fuera de la escuela. El reporte de los resultados se organiza en tres secciones. En la primera sección se presentarán los resultados de preguntas sobre la participación formal de los estudiantes en actividades al interior de la escuela y sobre la disposición de los estudiantes a participar en instancias políticas formales cuando sea adulto. En la segunda sección se expondrán los resultados a preguntas sobre la participación activista de los estudiantes en actividades al interior de la escuela y fuera de esta. En la tercera sección se mostrarán los resultados de preuntas sobre la participación comunitaria de los estudiantes en actividades al interior de la escuela y fuera de esta. <br>

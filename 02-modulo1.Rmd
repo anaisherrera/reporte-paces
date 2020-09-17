@@ -1,3 +1,6 @@
+---
+title: "Panel Ciudadanía Escolar"
+---
 # Conocimiento y formación en la escuela
 <div align="justify";>
 El reporte de los resultados correspondientes a este módulo se organiza en dos secciones. En la primera sección se presentarán las respuestas de los estudiantes a un set de preguntas que evalúan su nivel de conocimiento cívico. En la segunda sección se expondrán las respuestas de los docentes, estudiantes y apoderados a una serie de preguntas sobre el nivel de importancia de distintos aspectos en la formación ciudadana de los estudiantes y sobre quiénes son los que más influyen en la enseñanza de estos aspectos. 
